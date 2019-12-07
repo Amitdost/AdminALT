@@ -50,9 +50,9 @@
     <!-- Logo -->
     <a href="<?php echo base_url(); ?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>D</span>
+      <span class="logo-mini"><b>L</b>C</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>Medical</span>
+      <span class="logo-lg"><b>Admin</b><?php echo $admin['site_name'];?></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -298,20 +298,7 @@
           </li> 
 
           <li class="treeview">
-          		<a href="<?php echo base_url()."admin/dashboard"; ?>">
-                <i class="fa fa-address-book"></i> <span>Manage Roles</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-                <ul class="treeview-menu">
-                  <li><a href="<?php echo base_url()."admin/role-list"; ?>"><i class="fa fa-address-book"></i>Roles List</a></li>
-                  <li><a href="<?php echo base_url()."admin/add-role"; ?>"><i class="fa fa-address-card"></i>Add Role</a></li>
-                  </ul>
-          		</a>
-          </li>
-
-          <li class="treeview">
-          		<a href="<?php echo base_url()."admin/dashboard"; ?>">
+          		<a href="">
                 <i class="fa fa-user"></i> <span>Manage Users</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
@@ -324,18 +311,82 @@
           </li>
 
           <li class="treeview">
-          		<a href="<?php echo base_url()."admin/dashboard"; ?>">
-                <i class="fa fa-group"></i> <span>Manage Groups</span>
+          		<a href="">
+                <i class="fa fa-group"></i> <span>Manage Categories</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
                 <ul class="treeview-menu">
-                  <li><a href="<?php echo base_url()."admin/user-list"; ?>"><i class="fa fa-group"></i>Group List</a></li>
-                  <li><a href="<?php echo base_url()."admin/add-user"; ?>"><i class="fa fa-user-plus"></i>Add Group</a></li>
+                  <li><a href="<?php echo base_url()."admin/category-list"; ?>"><i class="fa fa-group"></i>Categories List</a></li>
+                  <li><a href="<?php echo base_url()."admin/add-category"; ?>"><i class="fa fa-user-plus"></i>Add Category</a></li>
                   </ul>
           		</a>
           </li>
 
+          <li class="treeview">
+          		<a href="">
+                <i class="fa fa-group"></i> <span>Manage Services</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                <ul class="treeview-menu">
+                  <li><a href="<?php echo base_url()."admin/category-list"; ?>"><i class="fa fa-group"></i>Services List</a></li>
+                  <li><a href="<?php echo base_url()."admin/add-category"; ?>"><i class="fa fa-user-plus"></i>Add Services</a></li>
+                  </ul>
+          		</a>
+          </li>
+
+          <li class="treeview">
+          		<a href="">
+                <i class="fa fa-group"></i> <span>Manage Appointments</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                <ul class="treeview-menu">
+                  <li><a href="<?php echo base_url()."admin/appointment-list"; ?>"><i class="fa fa-group"></i>Appointments List</a></li>
+                  <li><a href="<?php echo base_url()."admin/add-appointment"; ?>"><i class="fa fa-user-plus"></i>Add Appointment</a></li>
+                  </ul>
+          		</a>
+          </li>
+
+          <li class="treeview">
+          		<a href="">
+                <i class="fa fa-group"></i> <span>Manage Booking</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                <ul class="treeview-menu">
+                  <li><a href="<?php echo base_url()."admin/booking-list"; ?>"><i class="fa fa-group"></i>Booking List</a></li>
+                  <li><a href="<?php echo base_url()."admin/add-booking"; ?>"><i class="fa fa-user-plus"></i>Add Booking</a></li>
+                  </ul>
+          		</a>
+          </li>
+          
+          <li class="treeview">
+          		<a href="">
+                <i class="fa fa-group"></i> <span>Manage Payments</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                <ul class="treeview-menu">
+                  <li><a href="<?php echo base_url()."admin/paymnets-list"; ?>"><i class="fa fa-group"></i>Payments List</a></li>
+                  <li><a href="<?php echo base_url()."admin/add-payment"; ?>"><i class="fa fa-user-plus"></i>Add Payments</a></li>
+                  </ul>
+          		</a>
+          </li>
+
+          <li class="treeview">
+          		<a href="">
+                <i class="fa fa-group"></i> <span>Manage Reviews</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                <ul class="treeview-menu">
+                  <li><a href="<?php echo base_url()."admin/reviews-list"; ?>"><i class="fa fa-group"></i>Reviews List</a></li>
+                  <li><a href="<?php echo base_url()."admin/add-review"; ?>"><i class="fa fa-user-plus"></i>Add Review</a></li>
+                  </ul>
+          		</a>
+          </li>
 
         </li>
     </ul>

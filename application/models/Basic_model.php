@@ -35,7 +35,7 @@ class Basic_model extends CI_Model
        public function validateAdmin( $email, $password ){
 
           $this->db->select('*');
-          $this->db->from('administrator');
+          $this->db->from('lc_administrator');
           $this->db->where('admin_email', $email);
           $this->db->where('admin_password', $password);
 
@@ -54,7 +54,7 @@ class Basic_model extends CI_Model
       public function getAdmin(){
 
           $this->db->select('*');
-          $this->db->from('administrator');
+          $this->db->from('lc_administrator');
          
           $query = $this->db->get();
           $result = $query->row_array();

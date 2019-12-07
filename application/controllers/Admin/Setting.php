@@ -14,26 +14,6 @@ class Setting extends CI_Controller {
 		$this->admin = $this->basic_model->getAdmin();
 	}
 	
-	/**Add Post Category */
-	public function add_post_cat_page()
-	{
-		$this->load->template('setting_view');
-	}
-
-	/**Save category of post */
-	public function save_post_cat()
-	{
-		$data=array(
-            'category'=>$this->input->post('cat')
-        );
-
-        $count_row = $this->db->insert('cat_post',$data);
-			if($count_row>0)
-                die('Record created successfully');
-            else
-				die('Somthing went wrong');
-	}
-
 	/**All Profile Setting Page */
 	public function user_profile(){
 
@@ -59,7 +39,7 @@ class Setting extends CI_Controller {
 			}
 			
 			$admin['updated_on'] = time();
-			$status = $this->basic_model->update('administrator', $admin , array('admin_id' => '1'));
+			$status = $this->basic_model->update('lc_administrator', $admin , array('admin_id' => '1'));
 
 			if( $status > 0 ){
 	        		$success =  "Updated Successfully";

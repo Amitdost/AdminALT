@@ -5,10 +5,11 @@ class Login extends CI_Controller {
 
 	public function __construct(){
         parent:: __construct();
-        $this->load->model("postmodel");//Call Setting model
+		if($this->session->userdata('Admin')){
+           header("Location:".base_url()."admin/dashboard");
+			exit;
+        }
 	}
-	
-	
 
 	public function index(){
         
